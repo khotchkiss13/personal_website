@@ -13,5 +13,8 @@
  *= require_tree .
  *= require_self
  *= require foundation_and_overrides
+ *= require menu
+ *= require footer
+ *= require log_in
 
  */
