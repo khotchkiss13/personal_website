@@ -124,6 +124,37 @@ $header-sizes: (
     'h6': 16,
   ),
 );
+h1.name {
+  text-align: center;
+  font-size: 28pt;
+  color: #FFCC66;
+  font-family: 'Contrail One', cursive;
+}
+ul.title {
+  display: table;
+  list-style: none;
+  margin: auto;
+  padding-bottom: 500px; 
+}
+ul.title li {
+  text-align: center;
+  display: table-cell;
+  text-transform: uppercase;
+  font-size: 12pt;
+  color: #828282;
+  font-weight: normal;
+  margin: auto;
+
+  &::after {
+    content: "•";
+    padding: 0 0.2rem 0 0.4rem;
+  }
+
+  &:last-child::after {
+    content: "";
+    padding: 0 0.4rem 0 0.8rem;
+  }
+}
 $header-color: inherit;
 $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
